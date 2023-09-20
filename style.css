@@ -1,5 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*npx tailwindcss -i consolidation/style.css -o ./dist/output.css --watch*/
+/*npx tailwindcss -i consolidation/style.css -o ./consolidation/dist/output.css --watch*/
 /*# sourceMappingURL=style.css.map */
