@@ -7,7 +7,7 @@ https://www.senscritique.com/liste/collection_les_maitres_du_fantastique/3063063
 1. La Machine à explorer le temps
 The Time Machine
 
-https://www.senscritique.com/livre/la_machine_a_explorer_le_temps/10220
+https://m.media-amazon.com/images/I/71cTomY34xL._SY466_.jpg
 
 Sortie : 1895
 Roman, Science-fiction
@@ -43,7 +43,7 @@ The Call of Cthulhu
 https://media.senscritique.com/media/000011531172/300/l_appel_de_cthulhu.jpg
 
 Sortie : 2015
-Recueil de nouvelles, Fantastique, Nouvelle
+Fantastique, Nouvelle
 livre de Howard Phillips Lovecraft
 
 La terreur, l’horreur, l’informe du rêve, Lovecraft ne les éveille pas pour jouer. Il sait seulement que tout cela nous en disposons déjà, depuis l’enfance, ou dans l’inquiétude du quotidien. Il en est juste un formidable amplificateur.
