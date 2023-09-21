@@ -118,7 +118,7 @@ booksarray.forEach(function(book) {
     bookresume.textContent = book.resume;
 
     let linkimg = document.createElement("img");
-    linkimg.src = "https://img.freepik.com/vecteurs-premium/logo-youtube-rouge-logo-medias-sociaux_197792-1803.jpg?w=740";
+    linkimg.src = ".\consolidation\ressources\logo_llink.png";
     linkimg.alt = "Purchase";
     linkimg.className = "link-img";
     
