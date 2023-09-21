@@ -118,7 +118,7 @@ booksarray.forEach(function(book) {
     bookresume.textContent = book.resume;
 
     let linkimg = document.createElement("img");
-    linkimg.src = ".\consolidation\ressources\logo_llink.png";
+    linkimg.src = "/consolidation/ressources/pngegg.png";
     linkimg.alt = "Purchase";
     linkimg.className = "link-img";
     
