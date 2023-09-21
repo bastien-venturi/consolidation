@@ -106,7 +106,7 @@ let container = document.getElementById("container");
 
 booksarray.forEach(function (book) {
     let section = document.createElement("section");
-    section.className = "book-section bg-white  flex flex-col  p-4 rounded-lg shadow-md";
+    section.className = "book-section bg-white  flex flex-col justify-between p-4 rounded-lg shadow-md";
 
     let coverimg = document.createElement("img");
     coverimg.src = book.img;
@@ -118,11 +118,11 @@ booksarray.forEach(function (book) {
     category.className = "category text-center font-semibold";
     category.style.color = categoryColors[book.category[0]];
 
-    let bookname = document.createElement("p");
+    let bookname = document.createElement("h1");
     bookname.textContent = book.name;
     bookname.className = "bookname text-center text-xl font-semibold mt-2";
 
-    let bookauthor = document.createElement("p");
+    let bookauthor = document.createElement("h2");
     bookauthor.textContent = "Author: " + book.author;
     bookauthor.className = "bookauthor font-semibold text-center";
 
@@ -132,18 +132,18 @@ booksarray.forEach(function (book) {
 
     let bookresume = document.createElement("p");
     bookresume.textContent =  book.resume;
-    bookresume.className = "bookresume font-semibold text-center";
+    bookresume.className = "bookresume font-semibold mb-10 text-center";
 
     let linkimg = document.createElement("img");
     linkimg.src = "/consolidation/ressources/pngegg.png";
     linkimg.alt = "Purchase";
-    linkimg.className =  "link-img  h-10 ";
+    linkimg.className =  "link-img  w-auto h-10";
 
     let booklink = document.createElement("a");
     booklink.href = book.link;
     booklink.target = "_blank";
     booklink.appendChild(linkimg);
-    booklink.className =  "book-link inline-flex mt-10 ";
+    booklink.className =  "book-link self-end";
 
 
     section.appendChild(coverimg);
