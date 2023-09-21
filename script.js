@@ -32,7 +32,7 @@ let booksarray = [
         category: ["Fantastique", "Roman"],
         author:"Bram Stoker",
         date:"1963",
-        resume:"Le jeune Jonathan Harker rend visite au comte Dracula dans son château des Carpates afin de l’informer du domaine qu’il vient d’acheter pour lui en Angleterre. Au cours de son voyage, les autochtones qu’il rencontre tentent de le dissuader d’atteindre son but et manifestent une inquiétude véhémente où il ne voit d’abord que l’expression d’une superstition locale ridicule.",
+        resume:"Le jeune Jonathan Harker rend visite au comte Dracula dans son château des Carpates afin de l’informer du domaine qu’il vient d’acheter pour lui en Angleterre.",
         link:"https://www.amazon.com.be/Dracula-Bram-Stoker/dp/2290057401/ref=sr_1_5?crid=34BBZU8D9NQ18&keywords=Dracula&qid=1695198138&sprefix=dracula%2Caps%2C59&sr=8-5",
     },
     {
@@ -91,51 +91,69 @@ let booksarray = [
     },
 ]
 
+let categoryColors = {
+    'Roman': 'red',
+    'Science-fiction': 'blue',
+    'Fantastique': 'green',
+    'Nouvelles': 'orange',
+    'Jeunesse': 'purple',
+    'Philosophie': 'pink'
+};
 
 
 
 let container = document.getElementById("container");
 
-
-booksarray.forEach(function(book) {
-    
+booksarray.forEach(function (book) {
     let section = document.createElement("section");
-    section.className = "book-section";
+    section.className = "book-section bg-white  flex flex-col  p-4 rounded-lg shadow-md";
 
-    
-    let img = document.createElement("img");
-    img.src = book.img;
-    img.alt = book.name;
-    img.className = "book-img";
+    let coverimg = document.createElement("img");
+    coverimg.src = book.img;
+    coverimg.alt = book.name;
+    coverimg.className = "book-img    bg-cover  p-5  ";
 
     let category = document.createElement("p");
     category.textContent = book.category;
+    category.className = "category text-center font-semibold";
+    category.style.color = categoryColors[book.category[0]];
 
     let bookname = document.createElement("p");
     bookname.textContent = book.name;
+    bookname.className = "bookname text-center text-xl font-semibold mt-2";
+
+    let bookauthor = document.createElement("p");
+    bookauthor.textContent = "Author: " + book.author;
+    bookauthor.className = "bookauthor font-semibold text-center";
+
+    let bookdate = document.createElement("p");
+    bookdate.textContent = book.date;
+    bookdate.className = "bookdate text-lg font-semibold text-center";
 
     let bookresume = document.createElement("p");
-    bookresume.textContent = book.resume;
+    bookresume.textContent =  book.resume;
+    bookresume.className = "bookresume font-semibold text-center";
 
     let linkimg = document.createElement("img");
     linkimg.src = "/consolidation/ressources/pngegg.png";
     linkimg.alt = "Purchase";
-    linkimg.className = "link-img";
-    
-    
+    linkimg.className =  "link-img  h-10 ";
+
     let booklink = document.createElement("a");
     booklink.href = book.link;
-    booklink.className = "book-link";
+    booklink.target = "_blank";
     booklink.appendChild(linkimg);
-    
+    booklink.className =  "book-link inline-flex mt-10 ";
 
-    
-    section.appendChild(img);
+
+    section.appendChild(coverimg);
     section.appendChild(category);
     section.appendChild(bookname);
+    section.appendChild(bookauthor);
+    section.appendChild(bookdate);
     section.appendChild(bookresume);
     section.appendChild(booklink);
 
-    
     container.appendChild(section);
 });
+
