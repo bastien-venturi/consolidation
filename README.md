@@ -1,6 +1,11 @@
 # consolidation
 
-https://www.senscritique.com/liste/collection_les_maitres_du_fantastique/3063063
+
+
+site deployé: https://bastien-venturi.github.io/consolidation/
+
+
+site source: https://www.senscritique.com/liste/collection_les_maitres_du_fantastique/3063063
 
 
 logo
